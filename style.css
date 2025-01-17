@@ -1,0 +1,70 @@
+:root{
+    /* All Colors declared in variables*/
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --GreyLight: hsl(0, 0%, 20%);
+    --GreyNormal: hsl(0, 0%, 12%);
+    --GreyDark: hsl(0, 0%, 8%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-color: var(--GreyDark);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width:350px;
+    height: 680px;
+    background-color: var(--GreyNormal);
+    border-radius: 20px;
+    text-align: center;
+    padding:30px;
+}
+img{
+    border-radius: 50%;
+    width:100px;
+}
+h1{
+    color: var(--White);
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 17px;
+}
+h2{
+    color: var(--Green);
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--White);
+    margin-top:25px;
+}
+main ul{
+    list-style: none;
+}
+main ul li{
+    margin-top: 20px;
+    padding:20px;
+    background-color: var(--GreyLight);
+    color:var(--White);
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+main ul li:hover{
+    background-color: var(--Green);
+    color:black;
+}
